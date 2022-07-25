@@ -2,26 +2,29 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 #include "GamePiece.h"
+#include "TextureManager.h"
+using namespace std;
 class GameSquare
 {
 private:
 	GamePiece* occupiedPiece;
-	bool isKing, isOccupied;
+	bool isOccupied;
 	int rowNumber, columnNumber;
 	sf::Sprite squareSprite;
 
 public:
-	std::vector<GameSquare*> moveTiles;
-	std::vector<pair<GameSquare*, GameSquare*>> jumpTiles;
+	vector<GameSquare*> moveTiles;
+	vector<pair<GameSquare*, GameSquare*>> jumpTiles;
 	GameSquare();
-	GameSquare(int row, int column, sf::Sprite sprite);
+	GameSquare(int row, int column, string spriteName);
 	int GetRowNumber();
 	int GetColumnNumber();
 	void SetOccupiedPiece(GamePiece* piece);
 	void SetPower(bool isKing);
 	void AddAdjacentGameSquare(GameSquare* adjSquare);
 	void AddJumpPair(GameSquare* adjSquare, GameSquare* jumpToSquare);
-	void DrawSquare();
+	void SetSquarePosition(int x, int y);
+	void DrawSquare(sf::RenderWindow &myWindow);
 	
 };
 

@@ -136,7 +136,7 @@
     <ClCompile Include="GameBoard.cpp" />
     <ClCompile Include="GamePiece.cpp" />
     <ClCompile Include="GameSquare.cpp" />
-    <ClCompile Include="GamePlay.cpp" />
+    <ClCompile Include="PlayGame.cpp" />
     <ClCompile Include="TextureManager.cpp" />
   </ItemGroup>
   <ItemGroup>
