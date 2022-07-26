@@ -1,5 +1,6 @@
 #include "TextureManager.h"
 unordered_map<string, sf::Texture> TextureManager::textures;
+
 void TextureManager::LoadTexture(string textureName) {
 	string path = "Images/";
 	path += textureName + ".png";

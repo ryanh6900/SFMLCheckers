@@ -135,13 +135,15 @@
   <ItemGroup>
     <ClCompile Include="GameBoard.cpp" />
     <ClCompile Include="GamePiece.cpp" />
+    <ClCompile Include="GamePlayer.cpp" />
     <ClCompile Include="GameSquare.cpp" />
-    <ClCompile Include="PlayGame.cpp" />
+    <ClCompile Include="CheckersGame.cpp" />
     <ClCompile Include="TextureManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameBoard.h" />
     <ClInclude Include="GamePiece.h" />
+    <ClInclude Include="GamePlayer.h" />
     <ClInclude Include="GameSquare.h" />
     <ClInclude Include="TextureManager.h" />
   </ItemGroup>

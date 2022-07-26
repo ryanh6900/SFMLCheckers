@@ -8,7 +8,7 @@ class TextureManager
 private:
 	static unordered_map<string, sf::Texture> textures;
 	static void LoadTexture(string textureName);
-
+	
 public:
 	static sf::Texture& GetTexture(string textureName);
 	static void Clear();

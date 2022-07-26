@@ -7,7 +7,7 @@ class GameBoard
 private:
 	int numColumns, numRows;
 	vector<vector<GameSquare>> board;
-
+	//GameSquare board[8][8];
 public:
 	GameBoard(int size);
 	unsigned int GetWindowHeight();
